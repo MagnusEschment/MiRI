@@ -3,7 +3,7 @@ Android/iOs/web application for patient assessment at Emergency Rooms
 
 Digitalizinting patient assessment to reduce patient numbers and thus decrease waiting times at the Emergency Room (ER) at MRI - Klinikum München rechts der Isar in Munich through implementation of hardware including software application to increase patient satisfaction in the emergency room.
 
-Things used in this project:
+# Things used in this project:
 
 Software:
 XCode IDE: https://developer.apple.com/xcode/ 
@@ -17,7 +17,7 @@ Avoiding theft: Properly mounting hardware by using table-top mounted, wall-moun
 
 Small ticket printer: Right next it is necessary to mount or attach a small printer which prints a small ticket for the patient with his personal waiting ID as well as a personal password.
 
-Story:
+# Story:
 MiRI is a software and hardware solution which was developed by students of Technical University Munich during the Tech Challenge in the winter semester 2020/2021 for the hospital MRI Klinikum München rechts der Isar. MRI has stated the challenge to improve the patient journey and patient experience to which MiRI is the perfect answer for. This guide will step by step explain how this prototype was built in order to recreate it. 
 
 What is MiRI?
@@ -40,7 +40,7 @@ MiRI also has several advantages for the hospital. Through providing information
 
 
 
-Build:
+# Build:
 
 Preparation:
 How to recreate MiRI iOS application:
@@ -105,11 +105,16 @@ Outlook
 Over time, the algorithm learns and thus also estimates the times more precisely. This includes also estimations based on different times of the day as well as different days. 
 
 
-Final remarks
+
+# Code:
+
+Flutter Code:
+
+# Final remarks
 
 This project was created within a short and limited time frame and thus does not include a final product, but a product that has one working feature. 
 
-Credits:
+# Credits:
 
 Team SMAG of Tech Challenge WS2020/21
 
@@ -122,13 +127,6 @@ Gizem Sirmali:
 For any questions regarding the approach, application and coding as well as the description, please do not hesitate to contact us. 
 
 
-Schematics:
-
-Code:
 
 
 
-Flutter Code:
-
-
-Credits:
