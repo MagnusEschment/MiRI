@@ -1,5 +1,5 @@
 # MiRI - Android/iOs/web application for patient assessment at Emergency Rooms
-Digitalizinting patient assessment to reduce patient numbers and thus decrease waiting times at the Emergency Room (ER) at MRI - Klinikum München rechts der Isar in Munich, Germany through implementation of hardware including software application to increase patient satisfaction in the emergency room.
+Digitalizinting patient assessment to reduce patient numbers and thus decrease waiting times at the Emergency Room (ER) at MRI - Klinikum München rechts der Isar in Munich, Germany. This is made possible through implementation of hardware including software application to increase patient satisfaction in the emergency room.
 
 
 ## Things used in this project:
