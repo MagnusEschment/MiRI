@@ -64,7 +64,7 @@ Remark: The high number of screens exist because MiRI has to be adaptive to the 
 The different screens will be explained in detail in the order of how they will be shown to the user.
 
 1. *WelcomeScreens:* The Welcome screen in the app greets the user who then can intuitively click on the Next Button. The next screens will provide further instructions and also explain that data security rules are met. <br/>
-![alt text](https://github.com/MagnusEschment/MiRI/issues/1#issue-793598866)
+![alt text](https://user-images.githubusercontent.com/46497859/105745811-f8b2a380-5f3e-11eb-9bdb-da594ef452fb.png)
 
 2. *Menu Screen* The Menu screen lets the user choose from different options. The HealthAssessment will start the actual assessment. Apart from this option, the user can also choose from procedures and instructions. When clicking on procedures the users get more information about basic hospital procedures. These procedures can be adjusted for any hospital. The instructions button will provide information on how to fill out the survey and call an employee for help if needed.<br/>
 
