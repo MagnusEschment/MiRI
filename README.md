@@ -119,6 +119,181 @@ Over time, the algorithm learns and thus also estimates the times more precisely
 *Note: This is exemplary code in Java.
 
 ### Flutter Code:
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:miri/components/dart_card.dart';
+import 'package:miri/components/miri_appbar.dart';
+import 'package:miri/helpers/constants.dart';
+import 'package:miri/screens/question_one/question_one_screen.dart';
+
+class DashboardScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: SafeArea(
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              MiriAppBar(),
+              Container(
+                margin: EdgeInsets.symmetric(horizontal: 145.w),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Container(
+                      margin: EdgeInsets.only(top: 20.h),
+                      child: Text(
+                        "Hello! We are glad that you are here, you are in good hands now.",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: kDarkBlue,
+                          fontSize: 60.sp,
+                          fontWeight: FontWeight.w700,
+                          letterSpacing: -0.2,
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 50.h,
+                    ),
+                    Text(
+                      "What do you need?",
+                      style: TextStyle(
+                        color: kLightBlue,
+                        fontSize: 48.sp,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 50.h,
+                    ),
+                    InkWell(
+                      onTap: () {
+                        Route route = MaterialPageRoute(
+                          builder: (_) => QuestionOneScreen(),
+                        );
+                        Navigator.push(context, route);
+                      },
+                      child: DarkCard(
+                        width: 600.w,
+                        child: Column(
+                          children: [
+                            SvgPicture.asset(
+                              'assets/icons/user.svg',
+                              height: 88.w,
+                              width: 88.w,
+                              color: kBackGroundColor,
+                              fit: BoxFit.cover,
+                            ),
+                            SizedBox(height: 30.h),
+                            Text(
+                              "Health Assesment",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 36.sp,
+                                fontWeight: FontWeight.w700,
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 50.h),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        DarkCard(
+                          width: 248.w,
+                          child: Column(
+                            children: [
+                              SvgPicture.asset(
+                                'assets/icons/procedures.svg',
+                                height: 75.w,
+                                width: 75.w,
+                                color: kBackGroundColor,
+                                fit: BoxFit.cover,
+                              ),
+                              SizedBox(height: 30.h),
+                              Text(
+                                "Procedures",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 30.sp,
+                                  fontWeight: FontWeight.w700,
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        DarkCard(
+                          width: 248.w,
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              SvgPicture.asset(
+                                'assets/icons/info.svg',
+                                height: 88.w,
+                                width: 88.w,
+                                color: kBackGroundColor,
+                                fit: BoxFit.cover,
+                              ),
+                              SizedBox(height: 30.h),
+                              Text(
+                                "Instructions",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 30.sp,
+                                  fontWeight: FontWeight.w700,
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 50.h),
+                    TextFormField(
+                      decoration: InputDecoration(
+                        hintText: "Search",
+                        hintStyle: TextStyle(
+                          color: kLightBlue,
+                          fontSize: 48.sp,
+                          fontWeight: FontWeight.w500,
+                        ),
+                        prefixIcon: Icon(
+                          Icons.search,
+                          color: kLightBlue,
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(25.w)),
+                          borderSide: BorderSide(
+                            color: kLightBlue,
+                            width: 2,
+                            style: BorderStyle.solid,
+                          ),
+                        ),
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(25.w)),
+                          borderSide: BorderSide(
+                            color: kLightBlue,
+                            width: 2,
+                            style: BorderStyle.solid,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
 
 ## Final remarks
 
