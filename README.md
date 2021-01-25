@@ -70,7 +70,8 @@ The different screens will be explained in detail in the order of how they will 
 ![alt text](https://user-images.githubusercontent.com/46497859/105745882-0e27cd80-5f3f-11eb-8923-49d544236524.png)
 
 3. *HealthAssessment:* The answers to all questions asked in the health assessment have individual weighting criteria which has a direct impact on the estimation of waiting time. Thus depending on what the patient clicks, the waiting time is estimated. The questions were designed with the help of medical experts to determine waiting times as precisely as possible and also give alert when symptoms of life threatening conditions like a stroke occur. The detailed algorithm will be explained later.<br/>
-![alt text](https://user-images.githubusercontent.com/46497859/105749028-2c8fc800-5f43-11eb-9d21-f6a954b40140.png) ![alt text](https://user-images.githubusercontent.com/46497859/105745921-17b13580-5f3f-11eb-875a-e60017b475ac.png)
+![alt text](https://user-images.githubusercontent.com/46497859/105749028-2c8fc800-5f43-11eb-9d21-f6a954b40140.png) <br/>
+![alt text](https://user-images.githubusercontent.com/46497859/105745921-17b13580-5f3f-11eb-875a-e60017b475ac.png)
 
 4. *IDScreens:* First, the app shows the personal ID and personal password on the printing Screen. This anonymous ID is used later on for the waiting queue while the password is used for special patient related activities such as deleting the own spot in the waiting queue. In the meantime the printer, which is attached to the Check-in terminal prints a small card with personal ID and password. <br/>
 The next screen gives further instructions and tells the patient that a medical expert will come soon to pick him/her up for a personal verification of the results. <br/>
