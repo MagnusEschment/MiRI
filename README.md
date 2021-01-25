@@ -1,2 +1,2 @@
 # MiRI
-An iOS application for patient assessment at Emergency Rooms
+Android/iOs Web application for patient assessment at Emergency Rooms
