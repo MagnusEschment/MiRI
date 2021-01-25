@@ -6,7 +6,7 @@ Digitalizinting patient assessment to reduce patient numbers and thus decrease w
 
 ### Software:
 XCode IDE: https://developer.apple.com/xcode/ <br/>
-Flutter: https://flutter.dev/docs/get-started/install 
+Flutter: https://flutter.dev/docs/get-started/install <br/>
 Figma: https://www.figma.com
 
 ### Hardware: 
