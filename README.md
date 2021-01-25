@@ -124,7 +124,7 @@ Over time, the algorithm learns and thus also estimates the times more precisely
 
 This project was created within a short and limited time frame and thus does not include a final product, but a product that has one working feature. 
 
-## Credits:Team SMAG of Tech Challenge WS2020/21
+## Credits: Team SMAG of Tech Challenge WS2020/21
 
 Selina Graf: selina.graf@tum.de<br/>
 Magnus Eschment: magnus.eschment@tum.de<br/>
