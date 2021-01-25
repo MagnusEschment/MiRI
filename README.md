@@ -9,12 +9,12 @@ XCode IDE: https://developer.apple.com/xcode/ <br/>
 Flutter: https://flutter.dev/docs/get-started/install 
 
 ### Hardware: 
-MacOS based solution (preferred solution) : iPad with no further requirements<br/>
+MacOS based solution *(our solution)* : iPad with no further requirements<br/>
 Windows based solution: tablet or computer with no further requirements
 
 Avoiding theft: Properly mounting hardware by using table-top mounted, wall-mounted, or floor-mounted kiosks with security fasteners (star screws and key locks). If a non-mounted table-top tablet or kiosk is used, theft can be eliminated by putting the devices in close proximity to staff – ideally on the same countertop where the paper sign-in sheet was previously located.
 
-Small ticket printer: Right next it is necessary to mount or attach a small printer which prints a small ticket for the patient with his personal waiting ID as well as a personal password.
+Small ticket printer: Right next to it, it is necessary to mount or attach a small printer which prints a small ticket for the patient with his personal waiting ID as well as a personal password.
 
 ## Story:
 MiRI is a software and hardware solution which was developed by students of Technical University Munich during the Tech Challenge in the winter semester 2020/2021 for the hospital MRI Klinikum München rechts der Isar. MRI has stated the challenge to improve the patient journey and patient experience to which MiRI is the perfect answer for. This guide will step by step explain how this prototype was built in order to recreate it. 
@@ -30,11 +30,10 @@ MiRI is implemented in the regular check-in process at the ER, however intervene
 Therefore, when the patient arrives at the ER at the end of the assessment, an estimated approximate waiting time is displayed. This waiting time as well as the categorized patient condition is backed up by medical staff who usually welcomes the patient anyway. Furthermore, after seeing the minimum waiting time, the patient has the option to view alternative treatment options (if applicable) as well as to book doctors’ appointments or find the next pharmacy. Based on the waiting time and other treatment options, the patient then has the ability to make the best possible decision to stay or to receive alternative treatment. MiRI will help relocate the patients, save costs for hospitals as well as make efficient use of the health care system. 
 
 ### Advantages of MiRI:
-Patient view: 
+*For patients: <br/>*
 MiRI provides many advantages for patients. Through it’s fast assessment, it is time efficient and effective. Additionally, it provides transparency over waiting times, as well as flexibility for the patient, because the patient is able to go outside for some fresh air or grab a quick coffee, while having the waiting time displayed in the digital waiting room on his own device. MiRI satisfies the information need of the patient on the one hand through giving the estimated waiting time, on the other through providing additional information on alternative treatment options - so the patient is able to make the best possible decision for his health and his preferences. This can result in relieving staff because questions regarding the waiting time and alternatives won’t be asked as much anymore. 
 
-
-### Hospital view:
+*For hospitals: <br/>*
 MiRI also has several advantages for the hospital. Through providing information on alternative treatment options with less waiting times, MiRI helps relocating patients who are not in need of emergency care. This reduces not only the overall number of ER patients but also decreases costs for the hospital by up to 46%. Furthermore, this lowers the risk of spreading infectious diseases especially within the Covid-19 pandemic and structures the waiting rooms. 
 
 
@@ -42,14 +41,18 @@ MiRI also has several advantages for the hospital. Through providing information
 ## Build:
 
 ### Preparation:
-How to recreate MiRI iOS application:<br/>
+*How to recreate MiRI iOS application:<br/>*
 When starting to build a prototype it is advisable to begin with thinking of how the user will use the app and on which device. For several reasons we decided to use an iPad application on a stationary iPad placed in the ER. Therefore, we created user interfaces on Canva to see what our iPad app design will look like. Then we recreated this design on Figma. We decided to keep the design clean and simple for several reasons:
 
-The app has to be intuitive and therefore self explanatory.<br/>
-It should be able to be used by anyone so it has to be easy to understand without any distractions as well as give result in under 5min in order to be easy to use for the patient.
+* The app has to be intuitive and therefore self explanatory.
+* It should be able to be used by anyone so it has to be easy to understand without any distractions. 
+* The assessment has to be short
+
 
 To understand the user interfaces and the basic logic of the application, we have inserted them here:<br/>
-Firma Prototype 
+https://www.figma.com/file/Van7VUQZtdmn9jtwJeNovL/Miri?node-id=0%3A1 
+
+# PICTURES INSERT HERE
 
 
 ### Complete overview over all screens used in MiRI: 
@@ -59,17 +62,16 @@ Remark: The high number of screens exist because MiRI has to be adaptive to the 
 
 The different screens will be explained in detail in the order of how they will be shown to the user.
 
-WelcomeScreens: The WelcomeScreen in the app greets the user who then can intuitively click on the Next Button. The next screens will provide further instructions and also explain that data security rules are met. <br/>
-The Menu Screen lets the user choose from different options. The HealthAssessment will start the actual assessment. Apart from this option, the user can also choose from procedures and instructions. When clicking on procedures the users get more information about basic hospital procedures. These procedures can be adjusted for any hospital. The instructions button will provide information on how to fill out the survey and call an employee for help if needed.
-Starting the HealthAssessment: The answers to all questions asked in the health assessment have individual weighting criteria which has a direct impact on the estimation of waiting time. Thus depending on what the patient clicks, the waiting time is estimated. The questions were designed with the help of medical experts to determine waiting times as precisely as possible and also give alert when symptoms of life threatening conditions like a stroke occur. The detailed algorithm will be explained later.<br/>
-ID Screens: First, the app shows the personal ID and personal password on the printing Screen. This anonymous ID is used later on for the waiting queue while the password is used for special patient related activities such as deleting the own spot in the waiting queue. In the meantime the printer, which is attached to the Check-in terminal prints a small card with personal ID and password. <br/>
+*WelcomeScreens:* The Welcome screen in the app greets the user who then can intuitively click on the Next Button. The next screens will provide further instructions and also explain that data security rules are met. <br/>
+*Menu Screen* The Menu screen lets the user choose from different options. The HealthAssessment will start the actual assessment. Apart from this option, the user can also choose from procedures and instructions. When clicking on procedures the users get more information about basic hospital procedures. These procedures can be adjusted for any hospital. The instructions button will provide information on how to fill out the survey and call an employee for help if needed.<br/>
+*HealthAssessment:* The answers to all questions asked in the health assessment have individual weighting criteria which has a direct impact on the estimation of waiting time. Thus depending on what the patient clicks, the waiting time is estimated. The questions were designed with the help of medical experts to determine waiting times as precisely as possible and also give alert when symptoms of life threatening conditions like a stroke occur. The detailed algorithm will be explained later.<br/>
+*ID Screens:* First, the app shows the personal ID and personal password on the printing Screen. This anonymous ID is used later on for the waiting queue while the password is used for special patient related activities such as deleting the own spot in the waiting queue. In the meantime the printer, which is attached to the Check-in terminal prints a small card with personal ID and password. <br/>
 The next screen gives further instructions and tells the patient that a medical expert will come soon to pick him/her up for a personal verification of the results. <br/>
-Waiting time Screen: When clicking next the waiting time is calculated and displayed. This waiting time screen is the central node for further usage for the patient. A QR code leads to the virtual waiting room on the mobile phone, while the digital waiting room button leads to a short overview of the waiting room on the Ipad itself. <br/>
+*Waiting time Screen:* When clicking next the waiting time is calculated and displayed. This waiting time screen is the central node for further usage for the patient. A QR code leads to the virtual waiting room on the mobile phone, while the digital waiting room button leads to a short overview of the waiting room on the Ipad itself. <br/>
 The alternative treatment button is connected to a second menu displaying other treatment options. At last, the finished button resets the Ipad as well as all data is stored so the next patient is not able to see the sensitive personal data.<br/>
-
-When implementing the digital waiting room, then the QR Code will lead to a landing page with simply displays the numbers in line dependent from the waiting times. These numbers as well as the respective waiting times are entered by the medical staff after the back-up assessment and adjust automatically when time passes by.
-Menu2 Screen: This Screen allows the patients to get more information about alternative options as well as book appointments at specialists and family doctors but also to locate pharmacies. The emergency hotline button which has an educational purpose because a lot of patients don’t know about the hotline 116117 for emergency cases.<br/> 
-TheVirtualWaitingRoom: The virtual waiting room will be displayed as a landing page on the mobile phone which can be optionally accessed through scanning the QR-Code on the ExpectedWaitingTime Screen. It displays the waiting line as well as the respective times. It also has to services which can be used with the personal ID and password which were printed out for the patient earlier in the process. When entering the ID together with the password it is possible to postpone the treatment slot if you will be too late for your treatment time or to delete your spot complete and remove it from the waiting queue. 
+When implementing the digital waiting room, then the QR Code will lead to a landing page with simply displays the numbers in line dependent from the waiting times. These numbers as well as the respective waiting times are entered by the medical staff after the back-up assessment and adjust automatically when time passes by.<br/>
+*Menu2 Screen:* This Screen allows the patients to get more information about alternative options as well as book appointments at specialists and family doctors but also to locate pharmacies. The emergency hotline button which has an educational purpose because a lot of patients don’t know about the hotline 116117 for emergency cases.<br/> 
+*TheVirtualWaitingRoom:* The virtual waiting room will be displayed as a landing page on the mobile phone which can be optionally accessed through scanning the QR-Code on the ExpectedWaitingTime Screen. It displays the waiting line as well as the respective times. It also has to services which can be used with the personal ID and password which were printed out for the patient earlier in the process. When entering the ID together with the password it is possible to postpone the treatment slot if you will be too late for your treatment time or to delete your spot complete and remove it from the waiting queue. 
 
 
 ### The weighting of the questions: 
@@ -77,24 +79,19 @@ As previously mentioned, the questions in the questionnaire have different purpo
 In general it is also important to notice that MiRI is only used for patients in the ER which do not suffer very severe conditions. Patients arriving with the ambulance or patients arriving on their own with very big pain are treated directly and do not have to do this pre-check in process.
 
 Following questions are used for the calculation of waiting time: <br/>
-When did the symptoms occur? -> The shorter the time frame, the faster the treatment (ranging from one hour to three or more hours)
-Do you fill this out by yourself? -> if: “No, because I am medically not able to” then treatment time is reduced by 30 min to one hour
-What kind of pain do you have? -> if: “Bigger flesh wound” or “High fever” then treatment time is reduced by 30 min to one hour
-How strong is your pain subjectively? -> if “No pain” then treatment time is increased by 30 min
+* When did the symptoms occur? -> The shorter the time frame, the faster the treatment (ranging from one hour to three or more hours)
+* Do you fill this out by yourself? -> if: “No, because I am medically not able to” then treatment time is reduced by 30 min to one hour
+* What kind of pain do you have? -> if: “Bigger flesh wound” or “High fever” then treatment time is reduced by 30 min to one hour
+* How strong is your pain subjectively? -> if “No pain” then treatment time is increased by 30 min
 
 Following questions work as trigger question and result in very fast or immediate treatment because the are symptoms for a life threatening conditions such as a stroke: <br/>
-Do you experience any of the given symptoms (part1)
-Do you experience any of the given symptoms (part2)
+* Do you experience any of the given symptoms (part1)
+* Do you experience any of the given symptoms (part2)
 
 Furthermore, MiRI aims to prevent waiting longer than 4 hours. If the waiting time for a patient is approaching this limit a notification is sent to the hospital so that they are notified of the long waiting time. Secondly the patient has certainly been informed about the long waiting time so the patient had the option to leave or to book a doctor’s appointment but willingly choose the longer treatment time in the hospital.
 
-### Basic assumptions:
+### *Basic assumptions:*
 According to doctors, patients who are indeed able to fill out the survey themselves, require no immediate action and thus wait at least 2 hours if the waiting room is full. 
-
-
-Code for visualization: 
-
-
 
 
 ### Outlook:
@@ -122,7 +119,7 @@ Almira Kahya:
 Gizem Sirmali:
 
 
-For any questions regarding the approach, application and coding as well as the description, please do not hesitate to contact us.  
+For any questions regarding the approach, application and coding as well as the description, please do not hesitate to contact us. 
 
 
 
