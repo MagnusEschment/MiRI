@@ -121,8 +121,8 @@ This project was created within a short and limited time frame and thus does not
 
 Selina Graf: selina.graf@tum.de<br/>
 Magnus Eschment: magnus.eschment@tum.de<br/>
-Almira Kahya:kahyaalmira@gmail.com<br/>
-Gizem Sirmali:gizemmsir@gmail.com<br/>
+Almira Kahya: kahyaalmira@gmail.com<br/>
+Gizem Sirmali: gizemmsir@gmail.com<br/>
 
 
 For any questions regarding the approach, application and coding as well as the description, please do not hesitate to contact us. 
