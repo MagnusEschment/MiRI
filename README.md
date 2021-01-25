@@ -72,7 +72,6 @@ The different screens will be explained in detail in the order of how they will 
 The next screen gives further instructions and tells the patient that a medical expert will come soon to pick him/her up for a personal verification of the results. <br/>
 
 5. *Waiting time Screen:* When clicking next the waiting time is calculated and displayed. This waiting time screen is the central node for further usage for the patient. A QR code leads to the virtual waiting room on the mobile phone, while the digital waiting room button leads to a short overview of the waiting room on the Ipad itself. <br/>
-
 The alternative treatment button is connected to a second menu displaying other treatment options. At last, the finished button resets the Ipad as well as all data is stored so the next patient is not able to see the sensitive personal data.<br/>
 When implementing the digital waiting room, then the QR Code will lead to a landing page with simply displays the numbers in line dependent from the waiting times. These numbers as well as the respective waiting times are entered by the medical staff after the back-up assessment and adjust automatically when time passes by.<br/>
 
