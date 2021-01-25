@@ -5,7 +5,7 @@ Digitalizinting patient assessment to reduce patient numbers and thus decrease w
 ## Things used in this project:
 
 ### Software:
-XCode IDE: https://developer.apple.com/xcode/ 
+XCode IDE: https://developer.apple.com/xcode/ <br/>
 Flutter: https://flutter.dev/docs/get-started/install 
 
 ### Hardware: 
