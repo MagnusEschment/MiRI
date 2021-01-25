@@ -122,7 +122,7 @@ Almira Kahya:
 Gizem Sirmali:
 
 
-For any questions regarding the approach, application and coding as well as the description, please do not hesitate to contact us. 
+For any questions regarding the approach, application and coding as well as the description, please do not hesitate to contact us.  
 
 
 
