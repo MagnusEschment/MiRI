@@ -53,7 +53,7 @@ When starting to build a prototype it is advisable to begin with thinking of how
 To understand the user interfaces and the basic logic of the application, we have inserted them here:<br/>
 https://www.figma.com/file/Van7VUQZtdmn9jtwJeNovL/Miri?node-id=0%3A1 
 
-# PICTURES INSERT HERE
+![alt text](https://user-images.githubusercontent.com/46497859/105746552-de2cfa00-5f3f-11eb-9a2b-aa4ac66a695c.png)
 
 
 ### Complete overview over all screens used in MiRI: 
@@ -114,6 +114,9 @@ Over time, the algorithm learns and thus also estimates the times more precisely
 
 
 ## Code:
+![alt text](https://user-images.githubusercontent.com/46497859/105746583-e9802580-5f3f-11eb-8573-38fa438a66b4.png)
+
+*Note: This is exemplary code in Java.
 
 ### Flutter Code:
 
