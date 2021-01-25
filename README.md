@@ -9,7 +9,7 @@ XCode IDE: https://developer.apple.com/xcode/
 Flutter: https://flutter.dev/docs/get-started/install 
 
 ### Hardware: 
-MacOS based solution (preferred solution) : iPad with no further requirements
+MacOS based solution (preferred solution) : iPad with no further requirements 
 Windows based solution: tablet or computer with no further requirements
 
 Avoiding theft: Properly mounting hardware by using table-top mounted, wall-mounted, or floor-mounted kiosks with security fasteners (star screws and key locks). If a non-mounted table-top tablet or kiosk is used, theft can be eliminated by putting the devices in close proximity to staff – ideally on the same countertop where the paper sign-in sheet was previously located.
