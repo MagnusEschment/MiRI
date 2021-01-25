@@ -67,20 +67,25 @@ The different screens will be explained in detail in the order of how they will 
 ![alt text](https://user-images.githubusercontent.com/46497859/105745811-f8b2a380-5f3e-11eb-9bdb-da594ef452fb.png)
 
 2. *Menu Screen* The Menu screen lets the user choose from different options. The HealthAssessment will start the actual assessment. Apart from this option, the user can also choose from procedures and instructions. When clicking on procedures the users get more information about basic hospital procedures. These procedures can be adjusted for any hospital. The instructions button will provide information on how to fill out the survey and call an employee for help if needed.<br/>
+![alt text](https://user-images.githubusercontent.com/46497859/105745882-0e27cd80-5f3f-11eb-8923-49d544236524.png)
 
 3. *HealthAssessment:* The answers to all questions asked in the health assessment have individual weighting criteria which has a direct impact on the estimation of waiting time. Thus depending on what the patient clicks, the waiting time is estimated. The questions were designed with the help of medical experts to determine waiting times as precisely as possible and also give alert when symptoms of life threatening conditions like a stroke occur. The detailed algorithm will be explained later.<br/>
+![alt text](https://user-images.githubusercontent.com/46497859/105745921-17b13580-5f3f-11eb-875a-e60017b475ac.png)
 
 4. *ID Screens:* First, the app shows the personal ID and personal password on the printing Screen. This anonymous ID is used later on for the waiting queue while the password is used for special patient related activities such as deleting the own spot in the waiting queue. In the meantime the printer, which is attached to the Check-in terminal prints a small card with personal ID and password. <br/>
 The next screen gives further instructions and tells the patient that a medical expert will come soon to pick him/her up for a personal verification of the results. <br/>
+![alt text](https://user-images.githubusercontent.com/46497859/105745968-2566bb00-5f3f-11eb-83b4-87025c8808a0.png)
 
 5. *Waiting time Screen:* When clicking next the waiting time is calculated and displayed. This waiting time screen is the central node for further usage for the patient. A QR code leads to the virtual waiting room on the mobile phone, while the digital waiting room button leads to a short overview of the waiting room on the Ipad itself. <br/>
 The alternative treatment button is connected to a second menu displaying other treatment options. At last, the finished button resets the Ipad as well as all data is stored so the next patient is not able to see the sensitive personal data.<br/>
 When implementing the digital waiting room, then the QR Code will lead to a landing page with simply displays the numbers in line dependent from the waiting times. These numbers as well as the respective waiting times are entered by the medical staff after the back-up assessment and adjust automatically when time passes by.<br/>
+![alt text](https://user-images.githubusercontent.com/46497859/105746043-3ca5a880-5f3f-11eb-81c9-a8fddc34fe05.png)
 
 6. *Menu2 Screen:* This Screen allows the patients to get more information about alternative options as well as book appointments at specialists and family doctors but also to locate pharmacies. The emergency hotline button which has an educational purpose because a lot of patients don’t know about the hotline 116117 for emergency cases.<br/> 
+![alt text](https://user-images.githubusercontent.com/46497859/105746083-4af3c480-5f3f-11eb-9780-1bd867448cfc.png)
 
 7. *TheVirtualWaitingRoom:* The virtual waiting room will be displayed as a landing page on the mobile phone which can be optionally accessed through scanning the QR-Code on the ExpectedWaitingTime Screen. It displays the waiting line as well as the respective times. It also has to services which can be used with the personal ID and password which were printed out for the patient earlier in the process. When entering the ID together with the password it is possible to postpone the treatment slot if you will be too late for your treatment time or to delete your spot complete and remove it from the waiting queue. 
-
+![alt text](https://user-images.githubusercontent.com/46497859/105746125-59da7700-5f3f-11eb-8531-60067ce3dbbc.png)
 
 ### The weighting of the questions: 
 As previously mentioned, the questions in the questionnaire have different purposes. There are the basic questions which only purpose is to collect demographic data which can be later used for further analysis (e.g. at what time which age group is primarily arriving at the ER). Then there are the questions which are used for the calculation of the waiting time and thirdly also specific trigger questions which trigger very fast or immediate treatment.<br/>
