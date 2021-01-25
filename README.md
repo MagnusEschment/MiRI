@@ -1,13 +1,14 @@
 # MiRI - Android/iOs/web application for patient assessment at Emergency Rooms
 Digitalizinting patient assessment to reduce patient numbers and thus decrease waiting times at the Emergency Room (ER) at MRI - Klinikum München rechts der Isar in Munich through implementation of hardware including software application to increase patient satisfaction in the emergency room.
 
+
 ## Things used in this project:
 
-Software:
+### Software:
 XCode IDE: https://developer.apple.com/xcode/ 
 Flutter: https://flutter.dev/docs/get-started/install 
 
-Hardware: 
+### Hardware: 
 MacOS based solution (preferred solution) : iPad with no further requirements
 Windows based solution: tablet or computer with no further requirements
 
@@ -18,29 +19,29 @@ Small ticket printer: Right next it is necessary to mount or attach a small prin
 ## Story:
 MiRI is a software and hardware solution which was developed by students of Technical University Munich during the Tech Challenge in the winter semester 2020/2021 for the hospital MRI Klinikum München rechts der Isar. MRI has stated the challenge to improve the patient journey and patient experience to which MiRI is the perfect answer for. This guide will step by step explain how this prototype was built in order to recreate it. 
 
-What is MiRI?
+### What is MiRI?
 
 The underlying problem at MRI is the low customer satisfaction of people who are treated there. Local field research, internet research, interviews with patients and medical staff as well as further surveys pointed out that this is caused by non-transparent waiting times in the ER. These occur because 50-75% of all ER patients are wrongly in the ER due to lack of knowledge (e.g. where to go), because of special occasions (e.g. weekend, holiday) or false expectations (to get treatment faster than at specialists or family doctors). 
 
 MiRI is an iOS application on a stationary iPad placed noticeable close to the ER entrance which allows the patient to get a quick digital patient assessment when arriving at the Emergency room in a hospital and is embedded in the hospital check-in process.Therefore, MiRI includes a smart learning algorithm which weights answers of questions designed by doctors. Based on the answers, the waiting time is estimated. Over time, the data will be saved anonymously and analyzed in order to create new models to predict waiting times even more precisely. How this works, will later be explained in detail. 
 
-How does MiRI it work: 
+### How does MiRI it work: 
 MiRI is implemented in the regular check-in process at the ER, however intervenes before the patient check-ins with his patient data. It is important to note that MiRI only applies for patients who are able to fill out our the survey on their own. Patients that enter with obvious signs of life threatening situations as well as with the ambulance are excluded.
 Therefore, when the patient arrives at the ER at the end of the assessment, an estimated approximate waiting time is displayed. This waiting time as well as the categorized patient condition is backed up by medical staff who usually welcomes the patient anyway. Furthermore, after seeing the minimum waiting time, the patient has the option to view alternative treatment options (if applicable) as well as to book doctors’ appointments or find the next pharmacy. Based on the waiting time and other treatment options, the patient then has the ability to make the best possible decision to stay or to receive alternative treatment. MiRI will help relocate the patients, save costs for hospitals as well as make efficient use of the health care system. 
 
-Advantages of MiRI:
+### Advantages of MiRI:
 Patient view: 
 MiRI provides many advantages for patients. Through it’s fast assessment, it is time efficient and effective. Additionally, it provides transparency over waiting times, as well as flexibility for the patient, because the patient is able to go outside for some fresh air or grab a quick coffee, while having the waiting time displayed in the digital waiting room on his own device. MiRI satisfies the information need of the patient on the one hand through giving the estimated waiting time, on the other through providing additional information on alternative treatment options - so the patient is able to make the best possible decision for his health and his preferences. This can result in relieving staff because questions regarding the waiting time and alternatives won’t be asked as much anymore. 
 
 
-Hospital view:
+### Hospital view:
 MiRI also has several advantages for the hospital. Through providing information on alternative treatment options with less waiting times, MiRI helps relocating patients who are not in need of emergency care. This reduces not only the overall number of ER patients but also decreases costs for the hospital by up to 46%. Furthermore, this lowers the risk of spreading infectious diseases especially within the Covid-19 pandemic and structures the waiting rooms. 
 
 
 
 ## Build:
 
-Preparation:
+### Preparation:
 How to recreate MiRI iOS application:
 When starting to build a prototype it is advisable to begin with thinking of how the user will use the app and on which device. For several reasons we decided to use an iPad application on a stationary iPad placed in the ER. Therefore, we created user interfaces on Canva to see what our iPad app design will look like. Then we recreated this design on Figma. We decided to keep the design clean and simple for several reasons:
 
@@ -52,8 +53,7 @@ To understand the user interfaces and the basic logic of the application, we hav
 Firma Prototype 
 
 
-
-Complete overview over all screens used in MiRI: 
+### Complete overview over all screens used in MiRI: 
 
 Remark: The high number of screens exist because MiRI has to be adaptive to the situation of the patient. It has to have questions for the specific inquiry of the patient or display the different waiting times for the patient accordingly. 
 
@@ -73,7 +73,7 @@ Menu2 Screen: This Screen allows the patients to get more information about alte
 TheVirtualWaitingRoom: The virtual waiting room will be displayed as a landing page on the mobile phone which can be optionally accessed through scanning the QR-Code on the ExpectedWaitingTime Screen. It displays the waiting line as well as the respective times. It also has to services which can be used with the personal ID and password which were printed out for the patient earlier in the process. When entering the ID together with the password it is possible to postpone the treatment slot if you will be too late for your treatment time or to delete your spot complete and remove it from the waiting queue. 
 
 
-The weighting of the questions: 
+### The weighting of the questions: 
 As previously mentioned, the questions in the questionnaire have different purposes. There are the basic questions which only purpose is to collect demographic data which can be later used for further analysis (e.g. at what time which age group is primarily arriving at the ER). Then there are the questions which are used for the calculation of the waiting time and thirdly also specific trigger questions which trigger very fast or immediate treatment.
 In general it is also important to notice that MiRI is only used for patients in the ER which do not suffer very severe conditions. Patients arriving with the ambulance or patients arriving on their own with very big pain are treated directly and do not have to do this pre-check in process.
 
@@ -89,7 +89,7 @@ Do you experience any of the given symptoms (part2)
 
 Furthermore, MiRI aims to prevent waiting longer than 4 hours. If the waiting time for a patient is approaching this limit a notification is sent to the hospital so that they are notified of the long waiting time. Secondly the patient has certainly been informed about the long waiting time so the patient had the option to leave or to book a doctor’s appointment but willingly choose the longer treatment time in the hospital.
 
-Basic assumptions:
+### Basic assumptions:
 According to doctors, patients who are indeed able to fill out the survey themselves, require no immediate action and thus wait at least 2 hours if the waiting room is full. 
 
 
@@ -98,7 +98,7 @@ Code for visualization:
 
 
 
-Outlook
+### Outlook:
 
 Over time, the algorithm learns and thus also estimates the times more precisely. This includes also estimations based on different times of the day as well as different days. 
 
@@ -106,7 +106,7 @@ Over time, the algorithm learns and thus also estimates the times more precisely
 
 ## Code:
 
-Flutter Code:
+### Flutter Code:
 
 ## Final remarks
 
@@ -114,7 +114,8 @@ This project was created within a short and limited time frame and thus does not
 
 ## Credits:
 
-Team SMAG of Tech Challenge WS2020/21
+
+## Team SMAG of Tech Challenge WS2020/21
 
 Selina Graf:
 Magnus Eschment:
