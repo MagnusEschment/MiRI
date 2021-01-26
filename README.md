@@ -25,6 +25,7 @@ MiRI is a software and hardware solution which was developed by students of Tech
 The underlying problem at MRI is the low customer satisfaction of people who are treated there. Local field research, internet research, interviews with patients and medical staff as well as further surveys pointed out that this is caused by non-transparent waiting times in the ER. These occur because 50-75% of all ER patients are wrongly in the ER due to lack of knowledge (e.g. where to go), because of special occasions (e.g. weekend, holiday) or false expectations (to get treatment faster than at specialists or family doctors). 
 
 MiRI is an iOS application on a stationary iPad placed noticeable close to the ER entrance which allows the patient to get a quick digital patient assessment when arriving at the Emergency room in a hospital and is embedded in the hospital check-in process.Therefore, MiRI includes a smart learning algorithm which weights answers of questions designed by doctors. Based on the answers, the waiting time is estimated. Over time, the data will be saved anonymously and analyzed in order to create new models to predict waiting times even more precisely. How this works, will later be explained in detail. 
+
 ![alt text](https://user-images.githubusercontent.com/46497859/105819758-e2e1c480-5fb8-11eb-9dc0-56dbdd3ea63c.png)
 
 ### How does MiRI work: 
