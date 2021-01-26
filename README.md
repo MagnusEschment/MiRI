@@ -132,8 +132,15 @@ Over time, the algorithm learns and thus also estimates the times more precisely
 
 *Note: This is exemplary code in Java only that should illustrate how the logic for the calculation of waiting time would be implemented.
 
-![alt text](https://user-images.githubusercontent.com/46497859/105819999-3eac4d80-5fb9-11eb-8600-485736dbd6d0.png)
 ### Flutter Code:
+
+![alt text](https://user-images.githubusercontent.com/46497859/105819999-3eac4d80-5fb9-11eb-8600-485736dbd6d0.png)
+
+![alt text](https://user-images.githubusercontent.com/46497859/105820274-a6629880-5fb9-11eb-8533-980b8f377c22.png)
+
+![alt text](https://user-images.githubusercontent.com/46497859/105820332-b8dcd200-5fb9-11eb-8c75-bfd31c85dbe9.png)
+
+![alt text](https://user-images.githubusercontent.com/46497859/105820375-c72aee00-5fb9-11eb-9f63-b4c6d89f099b.png)
 
 
 ## Final remarks
