@@ -25,6 +25,7 @@ MiRI is a software and hardware solution which was developed by students of Tech
 The underlying problem at MRI is the low customer satisfaction of people who are treated there. Local field research, internet research, interviews with patients and medical staff as well as further surveys pointed out that this is caused by non-transparent waiting times in the ER. These occur because 50-75% of all ER patients are wrongly in the ER due to lack of knowledge (e.g. where to go), because of special occasions (e.g. weekend, holiday) or false expectations (to get treatment faster than at specialists or family doctors). 
 
 MiRI is an iOS application on a stationary iPad placed noticeable close to the ER entrance which allows the patient to get a quick digital patient assessment when arriving at the Emergency room in a hospital and is embedded in the hospital check-in process.Therefore, MiRI includes a smart learning algorithm which weights answers of questions designed by doctors. Based on the answers, the waiting time is estimated. Over time, the data will be saved anonymously and analyzed in order to create new models to predict waiting times even more precisely. How this works, will later be explained in detail. 
+![alt text](https://user-images.githubusercontent.com/46497859/105819758-e2e1c480-5fb8-11eb-9dc0-56dbdd3ea63c.png)
 
 ### How does MiRI work: 
 MiRI is implemented in the regular check-in process at the ER, however intervenes before the patient check-ins with his patient data. It is important to note that MiRI only applies for patients who are able to fill out our the survey on their own. Patients that enter with obvious signs of life threatening situations as well as with the ambulance are excluded.
@@ -47,10 +48,10 @@ When starting to build a prototype it is advisable to begin with thinking of how
 
 * The app has to be intuitive and therefore self explanatory.
 * It should be able to be used by anyone so it has to be easy to understand without any distractions. 
-* The assessment has to be short
+* The assessment has to be short.
 
 
-To understand the user interfaces and the basic logic of the application, we have inserted them here:<br/>
+To understand the user interfaces and the basic logic of the application, we have inserted them here (please also find the prototype on Figma):<br/>
 https://www.figma.com/file/Van7VUQZtdmn9jtwJeNovL/Miri?node-id=0%3A1 
 
 ![alt text](https://user-images.githubusercontent.com/46497859/105746552-de2cfa00-5f3f-11eb-9a2b-aa4ac66a695c.png)
@@ -58,22 +59,22 @@ https://www.figma.com/file/Van7VUQZtdmn9jtwJeNovL/Miri?node-id=0%3A1
 
 ### Complete overview over all screens used in MiRI: 
 
-Remark: The high number of screens exist because MiRI has to be adaptive to the situation of the patient. It has to have questions for the specific inquiry of the patient or display the different waiting times for the patient accordingly. 
+Remark: The high number of screens exists because MiRI has to be adaptive to the situation of the patient. It has to have questions for the specific inquiry of the patient or display the different waiting times for the patient accordingly. 
 
 
 The different screens will be explained in detail in the order of how they will be shown to the user.
 
-1. *WelcomeScreens:* The Welcome screen in the app greets the user who then can intuitively click on the Next Button. The next screens will provide further instructions and also explain that data security rules are met. <br/>
+1. *WelcomeScreens:* The *WelcomeScreen* in the app greets the user who then can intuitively click on the Next button. The next screens will provide further instructions and also explain that data security rules are met. <br/>
 ![alt text](https://user-images.githubusercontent.com/46497859/105745811-f8b2a380-5f3e-11eb-9bdb-da594ef452fb.png)
 
-2. *MenuScreen* The Menu screen lets the user choose from different options. The HealthAssessment will start the actual assessment. Apart from this option, the user can also choose from procedures and instructions. When clicking on procedures the users get more information about basic hospital procedures. These procedures can be adjusted for any hospital. The instructions button will provide information on how to fill out the survey and call an employee for help if needed.<br/>
+2. *MenuScreen* The *MenuScreen* lets the user choose from different options. The *HealthAssessment* will start the actual assessment. Apart from this option, the user can also choose from *Procedures* and *Instructions*. When clicking on *Procedures* the users get more information about basic hospital procedures (the hospitals decide which information they would like to provide here and can be adjusted for any hospital). The *Instructions* button will provide information on how to fill out the survey and call a medical eemployee for help if needed.<br/>
 ![alt text](https://user-images.githubusercontent.com/46497859/105745882-0e27cd80-5f3f-11eb-8923-49d544236524.png)
 
-3. *HealthAssessment:* The answers to all questions asked in the health assessment have individual weighting criteria which has a direct impact on the estimation of waiting time. Thus depending on what the patient clicks, the waiting time is estimated. The questions were designed with the help of medical experts to determine waiting times as precisely as possible and also give alert when symptoms of life threatening conditions like a stroke occur. The detailed algorithm will be explained later.<br/>
+3. *HealthAssessment:* The answers to all questions asked in the *HealthAssessment* have individual weighting criteria which has a direct impact on the estimation of waiting time. Thus depending on what the patient clicks, the waiting time is estimated. The questions were designed with the help of medical experts to determine waiting times as precisely as possible and also give alert when symptoms of life threatening conditions like a stroke occur. The detailed algorithm will be explained later.<br/>
 ![alt text](https://user-images.githubusercontent.com/46497859/105749028-2c8fc800-5f43-11eb-9d21-f6a954b40140.png) <br/>
 ![alt text](https://user-images.githubusercontent.com/46497859/105745921-17b13580-5f3f-11eb-875a-e60017b475ac.png)
 
-4. *IDScreens:* First, the app shows the personal ID and personal password on the printing Screen. This anonymous ID is used later on for the waiting queue while the password is used for special patient related activities such as deleting the own spot in the waiting queue. In the meantime the printer, which is attached to the Check-in terminal prints a small card with personal ID and password. <br/>
+4. *IDScreens:* First, the app shows the personal ID and personal password on the printing Screen. This anonymous ID is used later on for the waiting queue while the password is used for special patient related activities such as deleting the own spot in the waiting queue. In the meantime the printer, which is attached to the patient assessment terminal prints a small card with personal ID and password. <br/>
 The next screen gives further instructions and tells the patient that a medical expert will come soon to pick him/her up for a personal verification of the results. <br/>
 ![alt text](https://user-images.githubusercontent.com/46497859/105745968-2566bb00-5f3f-11eb-83b4-87025c8808a0.png)
 
@@ -82,10 +83,10 @@ The alternative treatment button is connected to a second menu displaying other 
 When implementing the digital waiting room, then the QR Code will lead to a landing page with simply displays the numbers in line dependent from the waiting times. These numbers as well as the respective waiting times are entered by the medical staff after the back-up assessment and adjust automatically when time passes by.<br/>
 ![alt text](https://user-images.githubusercontent.com/46497859/105746043-3ca5a880-5f3f-11eb-81c9-a8fddc34fe05.png)
 
-6. *AlternativeMenuScreen:* This Screen allows the patients to get more information about alternative options as well as book appointments at specialists and family doctors but also to locate pharmacies. The emergency hotline button which has an educational purpose because a lot of patients don’t know about the hotline 116117 for emergency cases.<br/> 
+6. *AlternativeMenuScreen:* This Screen allows the patients to get more information about alternative options as well as book appointments at specialists and family doctors but also to locate pharmacies. The emergency hotline button which has an educational purpose because a lot of patients don’t know about the hotline 116117 for emergency cases in Germany.<br/> 
 ![alt text](https://user-images.githubusercontent.com/46497859/105746083-4af3c480-5f3f-11eb-9780-1bd867448cfc.png)
 
-7. *TheVirtualWaitingRoom:* The virtual waiting room will be displayed as a landing page on the mobile phone which can be optionally accessed through scanning the QR-Code on the ExpectedWaitingTime Screen. It displays the waiting line as well as the respective times. It also has to services which can be used with the personal ID and password which were printed out for the patient earlier in the process. When entering the ID together with the password it is possible to postpone the treatment slot if you will be too late for your treatment time or to delete your spot complete and remove it from the waiting queue. 
+7. *TheVirtualWaitingRoom:* The virtual waiting room will be displayed as a landing page on the mobile phone which can be optionally accessed through scanning the QR-Code on the *WaitingTimeScreen*. It displays the waiting line as well as the respective times. It also has to services which can be used with the personal ID and password which were printed out for the patient earlier in the process. When entering the ID together with the password it is possible to postpone the treatment slot if you will be too late for your treatment time or to delete your spot complete and remove it from the waiting queue. 
 ![alt text](https://user-images.githubusercontent.com/46497859/105746125-59da7700-5f3f-11eb-8531-60067ce3dbbc.png)
 
 ### The weighting of the questions: 
@@ -119,6 +120,7 @@ Over time, the algorithm learns and thus also estimates the times more precisely
 
 *Note: This is exemplary code in Java only that should illustrate how the logic for the calculation of waiting time would be implemented.
 
+![alt text](https://user-images.githubusercontent.com/46497859/105819999-3eac4d80-5fb9-11eb-8600-485736dbd6d0.png)
 ### Flutter Code:
 
 
