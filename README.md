@@ -138,9 +138,9 @@ Over time, the algorithm learns and thus also estimates the times more precisely
 
 ![alt text](https://user-images.githubusercontent.com/46497859/105820274-a6629880-5fb9-11eb-8533-980b8f377c22.png)
 
-![alt text](https://user-images.githubusercontent.com/46497859/105820332-b8dcd200-5fb9-11eb-8c75-bfd31c85dbe9.png)
+![alt text](https://user-images.githubusercontent.com/46497859/105822064-e0349e80-5fbb-11eb-88f6-01ab9d65a645.png)
 
-![alt text](https://user-images.githubusercontent.com/46497859/105820375-c72aee00-5fb9-11eb-9f63-b4c6d89f099b.png)
+![alt text](https://user-images.githubusercontent.com/46497859/105822127-f6425f00-5fbb-11eb-9088-c71848872940.png)
 
 
 ## Final remarks
