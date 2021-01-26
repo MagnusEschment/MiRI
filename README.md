@@ -134,7 +134,7 @@ Over time, the algorithm learns and thus also estimates the times more precisely
 
 ### Flutter Code:
 
-This is the flutter code for the main method and the first two screens two illustrate how our app was implemented from the figma prototype which focus on the design part to the actual app that was created.
+This is the flutter code for the main method and the first two screens two illustrate how our app was implemented from the figma prototype which focus on the design part to the actual app that was created. The advantage of flutter code is that you can run it on Android as well as iOS and web as well.
 
 The main method starts when launching the app:<br/>
 ![alt text](https://user-images.githubusercontent.com/46497859/105819999-3eac4d80-5fb9-11eb-8600-485736dbd6d0.png)
