@@ -134,14 +134,14 @@ Over time, the algorithm learns and thus also estimates the times more precisely
 
 ### Flutter Code:
 
-The main method starts when launching the app.
+The main method starts when launching the app.<br/>
 ![alt text](https://user-images.githubusercontent.com/46497859/105819999-3eac4d80-5fb9-11eb-8600-485736dbd6d0.png)
 
-This class is run by the main method.
+This class is run by the main method.<br/>
 ![alt text](https://user-images.githubusercontent.com/46497859/105820274-a6629880-5fb9-11eb-8533-980b8f377c22.png)
 
 
-This is the code which visualizes the first two screens and also implements the routing between the screens (going to the respective screen when clicking on the respective button).
+This is the code which visualizes the first two screens and also implements the routing between the screens (going to the respective screen when clicking on the respective button).<br/>
 ![alt text](https://user-images.githubusercontent.com/46497859/105822064-e0349e80-5fbb-11eb-88f6-01ab9d65a645.png)
 
 ![alt text](https://user-images.githubusercontent.com/46497859/105822127-f6425f00-5fbb-11eb-9088-c71848872940.png)
